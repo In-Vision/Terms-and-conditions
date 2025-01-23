@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-ar="الشروط والأحكام - In Vision" data-en="In Vision - Terms and Conditions" data-zh="In Vision - 条款和条件" data-es="In Vision - Términos y condiciones" data-hi="In Vision - नियम और शर्तें" data-de="In Vision - Allgemeine Geschäftsbedingungen">In Vision - Terms and
+        Conditions</title>
+    <link rel="icon" type="image/png" href="logo 6.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #202020;
+            color: #fff;
+        }
+
+        header {
+            background-color: #202020;
+            color: white;
+            padding: 20px;
+            margin-right: 30px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .terms .logo-container img {
+            height: 50px;
+            opacity: 0;
+        }
+
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            
+            width: 100%;
+        }
+
+
+        .language-selector {
+            position: relative;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+
+
+        .language-dropdown {
+            position: absolute;
+            top: 0px;
+            right: 5px;
+            list-style: none;
+            background: #202020;
+            border-radius: 5px;
+            display: none;
+            padding: 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            z-index: 10;
+        }
+
+        .language-dropdown li {
+            padding: 10px 20px;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            white-space: nowrap;
+        }
+
+        .language-dropdown li img {
+            height: 20px;
+            margin-right: 10px;
+        }
+
+        .language-dropdown li:hover {
+            background: #505050;
+            border-radius: 5px;
+        }
+
+        .language-dropdown.show {
+            display: block;
+        }
+
+        .flag-icon1 {
+            height: 30px;
+            user-select: none;
+        }
+
+        .flag-icon1:hover {
+            transform: scale(1.08);
+        }
+
+
+
+        section.content {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #333;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #fff;
+            font-size: 2em;
+            margin-bottom: 20px;
+
+        }
+
+        .terms-item {
+            margin-bottom: 30px;
+        }
+
+        .terms-item h3 {
+            font-size: 1.5em;
+            color: #9900ff;
+            cursor: pointer;
+            margin: 0;
+            transition: color 0.3s ease;
+        }
+
+        .terms-item h3:hover {
+            color: #ff0051;
+        }
+
+        .terms-item p {
+            font-size: 1.1em;
+            line-height: 1.8;
+            margin-top: 10px;
+            color: #fff;
+        }
+
+        footer {
+            background-color: #202020;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 1em;
+        }
+
+        footer a {
+            color: #ffffff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            background: linear-gradient(to right, #ff0051, #9900ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .return-home {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: linear-gradient(90deg, #9900ff, #ff0051);
+            color: white !important;
+            padding: 10px 20px;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 16px;
+            text-decoration: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+
+        .return-home:hover {
+            background: linear-gradient(90deg, #ff0051, #9900ff);
+            transform: scale(1.05);
+            /* تكبير الزر قليلاً عند التمرير */
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+            /* عرض شريط التمرير */
+            background-color: #333;
+            /* لون خلفية شريط التمرير */
+        }
+
+        /* تخصيص مقبض شريط التمرير */
+        ::-webkit-scrollbar {
+            width: 8px;
+            /* عرض شريط التمرير */
+            background-color: #333;
+            /* لون خلفية شريط التمرير */
+        }
+
+        /* تخصيص مقبض شريط التمرير */
+        ::-webkit-scrollbar-thumb {
+            background-color: #9900ff;
+            /* لون المقبض */
+            border-radius: 10px;
+            /* جعل المقبض دائري */
+        }
+
+        /* عند تمرير الفأرة فوق المقبض */
+        ::-webkit-scrollbar-thumb:hover {
+            background-color: #ff0051;
+            /* لون المقبض عند التمرير */
+        }
+
+        ::selection {
+            color: #fff;
+            background: #ff0051;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                padding: 15px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .logo-container {
+                margin-left: 0;
+                display: flex;
+                justify-content: center;
+                width: 100%;
+            }
+
+            .language-selector {
+                position: relative;
+                margin-top: 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                width: auto;
+            }
+
+            .language-dropdown {
+                position: absolute;
+                top: 50px;
+                right: 0;
+                width: auto;
+                max-height: 300px;
+                padding: 0;
+                box-shadow: none;
+                border-radius: 5px;
+                background-color: #202020;
+                z-index: 10;
+            }
+
+            .language-dropdown li {
+                width: auto;
+                padding: 12px 20px;
+                text-align: left;
+            }
+
+            section.content {
+                padding: 30px 20px;
+                margin: 20px;
+                box-shadow: none;
+            }
+
+            .return-home {
+                font-size: 14px;
+                padding: 8px 16px;
+            }
+
+            footer {
+                font-size: 0.9em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h2 {
+                font-size: 1.5em;
+            }
+
+            h3 {
+                font-size: 1.2em;
+            }
+
+            .terms-item p {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+
+            <h1 style="text-align: center; justify-content: center;" data-en="Terms and Conditions" data-ar="الشروط والأحكام" data-zh="条款和条件" data-es="Términos y condiciones" data-hi="नियम और शर्तें" data-de="Allgemeine Geschäftsbedingungen">Terms and Conditions</h1>
+        </div>
+        <div class="language-selector">
+            <div class="language-icon" id="languageIcon">
+                <img oncontextmenu="return false;" draggable="false" src="united-kingdom.png" alt="English"
+                    class="flag-icon1" id="currentFlag" />
+            </div>
+            <ul class="language-dropdown" id="languageDropdown">
+                <!-- سيتم تعبئة الخيارات ديناميكياً -->
+            </ul>
+        </div>
+    </header>
+
+    <section class="content">
+        <h2 data-en="Terms and Conditions for Using InVision" data-ar="الشروط والأحكام لاستخدام InVision"
+            data-de="Nutzungsbedingungen für InVision" data-zh="使用InVision的条款和条件"
+            data-hi="InVision के उपयोग के लिए शर्तें और नियम" data-es="Términos y condiciones para usar InVision">Terms
+            and
+            Conditions for Using InVision</h2>
+
+        <!-- Terms and Conditions Items -->
+        <div class="terms-item">
+            <h3 id="introductionTitle" data-en="Introduction" data-ar="مقدمة" data-de="Einleitung" data-zh="介绍"
+                data-hi="परिचय" data-es="Introducción">Introduction</h3>
+            <p id="introductionContent"
+                data-en="These terms and conditions govern your use of InVision, a platform that allows users to generate images based on text descriptions. By accessing or using InVision, you agree to comply with these terms. InVision is committed to providing a platform that fosters creativity and innovation. Users are encouraged to explore the possibilities of generating images using accurate and detailed descriptions. By ensuring your input is precise, you contribute to enhancing the quality of the output. These terms are designed to create a safe and productive environment for all users. Misuse of the platform, such as creating harmful or illegal content, is strictly prohibited. InVision reserves the right to modify these terms as necessary to adapt to changing circumstances or legal requirements. Users are responsible for staying informed about the latest updates to the terms and conditions. By continuing to use the platform, you acknowledge your agreement to any changes. The platform aims to support various creative needs, whether for personal projects, educational purposes, or business endeavors. Collaboration and respect among users are highly valued. InVision offers tools and features that enable users to save, share, and utilize generated images effectively. Your contribution to the platform, whether through feedback or active use, helps us improve and expand our services. Thank you for choosing InVision as your creative partner."
+                data-ar="تحدد هذه الشروط والأحكام كيفية استخدامك لمنصة InVision، وهي منصة تسمح للمستخدمين بإنشاء صور بناءً على أوصاف نصية. باستخدامك لمنصة InVision، فإنك توافق على الامتثال لهذه الشروط. تسعى منصة InVision إلى توفير بيئة تدعم الإبداع والابتكار. يتم تشجيع المستخدمين على استكشاف الإمكانيات المختلفة لإنشاء الصور باستخدام أوصاف دقيقة ومفصلة. من خلال ضمان دقة مدخلاتك، فإنك تساهم في تحسين جودة المخرجات. تهدف هذه الشروط إلى خلق بيئة آمنة ومنتجة لجميع المستخدمين. يُحظر بشدة إساءة استخدام المنصة، مثل إنشاء محتوى ضار أو غير قانوني. تحتفظ InVision بالحق في تعديل هذه الشروط حسب الضرورة للتكيف مع الظروف المتغيرة أو المتطلبات القانونية. يتحمل المستخدمون مسؤولية البقاء على اطلاع بأحدث التحديثات للشروط والأحكام. باستخدامك المستمر للمنصة، فإنك تقر بموافقتك على أي تغييرات. تهدف المنصة إلى دعم احتياجات إبداعية متنوعة، سواء كانت لمشاريع شخصية أو أغراض تعليمية أو تجارية. يُقدر التعاون والاحترام المتبادل بين المستخدمين بشكل كبير. توفر InVision أدوات وميزات تمكّن المستخدمين من حفظ الصور التي تم إنشاؤها ومشاركتها واستخدامها بشكل فعال. إن مساهمتك في المنصة، سواء من خلال تقديم الملاحظات أو الاستخدام النشط، تساعدنا على تحسين خدماتنا وتوسيعها. شكرًا لاختيارك InVision كشريك إبداعي لك."
+                data-de="Diese allgemeinen Geschäftsbedingungen regeln Ihre Nutzung von InVision, einer Plattform, die es Benutzern ermöglicht, Bilder basierend auf Textbeschreibungen zu erstellen. Durch den Zugriff auf oder die Nutzung von InVision stimmen Sie zu, diese Bedingungen einzuhalten. InVision verpflichtet sich, eine Plattform bereitzustellen, die Kreativität und Innovation fördert. Benutzer werden ermutigt, die Möglichkeiten der Bilderstellung mithilfe genauer und detaillierter Beschreibungen zu erkunden. Indem Sie sicherstellen, dass Ihre Eingaben präzise sind, tragen Sie zur Verbesserung der Qualität der Ausgabe bei. Diese Bedingungen sollen eine sichere und produktive Umgebung für alle Benutzer schaffen. Missbrauch der Plattform, wie beispielsweise das Erstellen schädlicher oder illegaler Inhalte, ist strengstens untersagt. InVision behält sich das Recht vor, diese Bedingungen bei Bedarf anzupassen, um sich an veränderte Umstände oder gesetzliche Anforderungen anzupassen. Benutzer sind dafür verantwortlich, über die neuesten Aktualisierungen der Allgemeinen Geschäftsbedingungen informiert zu bleiben. Durch die weitere Nutzung der Plattform erkennen Sie Ihre Zustimmung zu etwaigen Änderungen an. Die Plattform zielt darauf ab, verschiedene kreative Bedürfnisse zu unterstützen, sei es für persönliche Projekte, Bildungszwecke oder geschäftliche Unternehmungen. Zusammenarbeit und Respekt unter den Benutzern werden hoch geschätzt. InVision bietet Tools und Funktionen, mit denen Benutzer erstellte Bilder effektiv speichern, teilen und nutzen können. Ihr Beitrag zur Plattform, sei es durch Feedback oder aktive Nutzung, hilft uns, unsere Dienstleistungen zu verbessern und zu erweitern. Vielen Dank, dass Sie sich für InVision als Ihren kreativen Partner entschieden haben."
+                data-zh="本条款和条件规范了您对 InVision 的使用，这是一种允许用户根据文本描述生成图像的平台。通过访问或使用 InVision，您同意遵守这些条款。InVision 致力于提供一个促进创造力和创新的平台。用户被鼓励通过准确和详细的描述来探索生成图像的各种可能性。确保您的输入准确，您将有助于提高输出质量。这些条款旨在为所有用户创建一个安全和高效的环境。严禁滥用平台，例如创建有害或非法内容。InVision 保留根据需要修改这些条款的权利，以适应变化的环境或法律要求。用户有责任及时了解条款和条件的最新更新。继续使用本平台即表明您同意任何更改。本平台旨在支持各种创意需求，无论是个人项目、教育用途还是商业用途。用户之间的合作和相互尊重受到高度重视。InVision 提供工具和功能，使用户能够高效保存、分享和使用生成的图像。无论是通过反馈还是积极使用，您对平台的贡献都有助于我们改进和扩展服务。感谢您选择 InVision 作为您的创意合作伙伴。"
+                data-hi="इनविज़न का उपयोग करने के लिए ये नियम और शर्तें आपके उपयोग को नियंत्रित करती हैं, यह एक ऐसा प्लेटफ़ॉर्म है जो उपयोगकर्ताओं को टेक्स्ट विवरण के आधार पर छवियों को बनाने की अनुमति देता है। इनविज़न का उपयोग करके, आप इन नियमों का पालन करने के लिए सहमत होते हैं। इनविज़न एक ऐसा प्लेटफ़ॉर्म प्रदान करने के लिए प्रतिबद्ध है जो रचनात्मकता और नवाचार को बढ़ावा देता है। उपयोगकर्ताओं को सटीक और विस्तृत विवरण का उपयोग करके छवियों को उत्पन्न करने की संभावनाओं का पता लगाने के लिए प्रोत्साहित किया जाता है। आपकी इनपुट की सटीकता सुनिश्चित करके, आप आउटपुट की गुणवत्ता को बढ़ाने में मदद करते हैं। ये नियम सभी उपयोगकर्ताओं के लिए एक सुरक्षित और उत्पादक वातावरण बनाने के लिए डिज़ाइन किए गए हैं। प्लेटफ़ॉर्म का दुरुपयोग, जैसे कि हानिकारक या अवैध सामग्री बनाना, सख्ती से निषिद्ध है। इनविज़न बदलती परिस्थितियों या कानूनी आवश्यकताओं के अनुकूल होने के लिए इन नियमों को आवश्यकतानुसार संशोधित करने का अधिकार सुरक्षित रखता है। उपयोगकर्ताओं को नियम और शर्तों के नवीनतम अपडेट के बारे में सूचित रहने की जिम्मेदारी है। प्लेटफ़ॉर्म का लगातार उपयोग करके, आप किसी भी बदलाव के लिए अपनी सहमति स्वीकार करते हैं। यह प्लेटफ़ॉर्म व्यक्तिगत परियोजनाओं, शैक्षिक प्रयोजनों या व्यावसायिक उद्यमों के लिए विभिन्न रचनात्मक आवश्यकताओं का समर्थन करता है। उपयोगकर्ताओं के बीच सहयोग और सम्मान की अत्यधिक सराहना की जाती है। इनविज़न उपकरण और विशेषताएं प्रदान करता है जो उपयोगकर्ताओं को उत्पन्न छवियों को प्रभावी ढंग से सहेजने, साझा करने और उपयोग करने में सक्षम बनाते हैं। फीडबैक या सक्रिय उपयोग के माध्यम से प्लेटफ़ॉर्म में आपका योगदान हमारी सेवाओं में सुधार और विस्तार करने में मदद करता है। इनविज़न को आपका रचनात्मक साथी चुनने के लिए धन्यवाद।"
+                data-es="Estos términos y condiciones regulan su uso de InVision, una plataforma que permite a los usuarios generar imágenes basadas en descripciones de texto. Al acceder o utilizar InVision, usted acepta cumplir con estos términos. InVision se compromete a proporcionar una plataforma que fomente la creatividad y la innovación. Se anima a los usuarios a explorar las posibilidades de generar imágenes utilizando descripciones precisas y detalladas. Al garantizar que su entrada sea precisa, contribuye a mejorar la calidad del resultado. Estos términos están diseñados para crear un entorno seguro y productivo para todos los usuarios. El uso indebido de la plataforma, como la creación de contenido dañino o ilegal, está estrictamente prohibido. InVision se reserva el derecho de modificar estos términos según sea necesario para adaptarse a circunstancias cambiantes o requisitos legales. Los usuarios son responsables de mantenerse informados sobre las últimas actualizaciones de los términos y condiciones. Al continuar utilizando la plataforma, usted reconoce su aceptación de cualquier cambio. La plataforma está destinada a respaldar diversas necesidades creativas, ya sea para proyectos personales, propósitos educativos o emprendimientos comerciales. La colaboración y el respeto entre los usuarios son altamente valorados. InVision ofrece herramientas y funciones que permiten a los usuarios guardar, compartir y utilizar imágenes generadas de manera efectiva. Su contribución a la plataforma, ya sea mediante comentarios o uso activo, nos ayuda a mejorar y expandir nuestros servicios. Gracias por elegir InVision como su socio creativo.">
+                These terms and conditions govern your use of InVision, a platform that allows users to generate images
+                based on text descriptions. By accessing or using InVision, you agree to comply with these terms.
+                InVision is committed to providing a platform that fosters creativity and innovation. Users are
+                encouraged to explore the possibilities of generating images using accurate and detailed descriptions.
+                By ensuring your input is precise, you contribute to enhancing the quality of the output. These terms
+                are designed to create a safe and productive environment for all users. Misuse of the platform, such as
+                creating harmful or illegal content, is strictly prohibited. InVision reserves the right to modify these
+                terms as necessary to adapt to changing circumstances or legal requirements. Users are responsible for
+                staying informed about the latest updates to the terms and conditions. By continuing to use the
+                platform, you acknowledge your agreement to any changes. The platform aims to support various creative
+                needs, whether for personal projects, educational purposes, or business endeavors. Collaboration and
+                respect among users are highly valued. InVision offers tools and features that enable users to save,
+                share, and utilize generated images effectively. Your contribution to the platform, whether through
+                feedback or active use, helps us improve and expand our services. Thank you for choosing InVision as
+                your creative partner.
+            </p>
+        </div>
+
+        <div class="terms-item">
+            <h3 id="userresponsibilitiesTitle" data-en="User Responsibilities" data-ar="مسؤوليات المستخدم"
+                data-de="Verantwortlichkeiten des Nutzers" data-es="Responsabilidades del usuario" data-zh="用户责任"
+                data-hi="उपयोगकर्ता की जिम्मेदारियां">User
+                Responsibilities</h3>
+            <p id="userresponsibilitiesContent"
+                data-en="At InVision, we strive to provide a platform where users can unleash their creativity and generate high-quality images based on text descriptions. However, as a user of the platform, it is your responsibility to use it in a manner that is both ethical and legal. By accessing and utilizing the features of InVision, you agree to adhere to the following responsibilities.
+
+                First and foremost, users are responsible for providing clear, accurate, and precise text descriptions when generating images. The quality of the images created on InVision depends entirely on the accuracy and clarity of the input descriptions provided. If the descriptions are vague, ambiguous, or unclear, the resulting images may not meet the user’s expectations or the intended purpose. It is therefore essential that users take the time to provide accurate and detailed descriptions to ensure the creation of high-quality and effective visual content.
+                
+                Additionally, users must understand that InVision is a platform that should only be used for creating content that is ethical, lawful, and respectful. You are prohibited from using the platform to generate harmful, illegal, or offensive content. This includes, but is not limited to, content that promotes violence, discrimination, hate speech, or illegal activities. It is crucial to avoid creating images that could be considered defamatory, obscene, or offensive to individuals or groups. Any content that perpetuates harmful stereotypes, promotes hate, or encourages illegal behavior is strictly prohibited.
+                
+                Furthermore, all content generated on InVision must comply with applicable laws and regulations. Users must ensure that the content they create does not violate any local, national, or international laws, including those related to intellectual property, privacy, and other legal matters. This means that you should not create images that infringe on the rights of others, such as using copyrighted material or trademarks without permission. InVision does not take responsibility for any legal issues that arise from the misuse of the platform or the creation of illegal content.
+                
+                In addition to legal responsibilities, users must also consider the potential impact their generated content may have on others. InVision is committed to creating a safe and respectful environment, and we expect all users to contribute positively to this. Any content that could harm others, whether emotionally, psychologically, or physically, should be avoided. This includes content that promotes violence, abuse, harassment, or any other form of harm. We ask that users exercise caution and responsibility when using the platform to create content that may affect others negatively.
+                
+                Users must also refrain from generating content that may spread misinformation, perpetuate hate, or incite violence or discrimination. The platform is a tool for creativity and innovation, and it should be used to generate positive and inspiring content that contributes to the well-being of society. Content that spreads false information or encourages harmful actions goes against the values of InVision.
+                
+                InVision reserves the right to monitor the content that is generated on the platform and to take action if any violations of these responsibilities are identified. If a user is found to be in violation of these terms, InVision may suspend or terminate their account without prior notice. Depending on the severity of the violation, legal action may also be taken, and the user could be held liable for any damages or losses caused by the creation or distribution of harmful or illegal content.
+                
+                To maintain the integrity of the platform, it is essential that users understand their role in ensuring a positive and safe experience for all. The responsibility for creating content that adheres to the legal and ethical standards lies with the user. By using InVision, you agree to respect the rights of others and to refrain from using the platform for any malicious, harmful, or illegal purposes.
+                
+                We encourage all users to engage with InVision in a manner that promotes creativity, innovation, and respect for others. The platform is here to help you create beautiful and meaningful content, and it should be used in a way that fosters a safe and inclusive environment for everyone.
+                
+                In conclusion, users of InVision are responsible for providing accurate and detailed descriptions, ensuring that the content they generate complies with all applicable laws, and refraining from creating harmful or offensive content. By adhering to these responsibilities, users can contribute to a positive and respectful community while enjoying the full potential of the InVision platform."
+                data-ar="في InVision، نسعى جاهدين لتوفير منصة يمكن للمستخدمين من خلالها إطلاق إبداعاتهم وإنشاء صور عالية الجودة بناءً على الأوصاف النصية. ومع ذلك، باعتبارك مستخدمًا للمنصة، فإنك تتحمل المسؤولية الكاملة في استخدامها بطريقة أخلاقية وقانونية. من خلال الوصول إلى واستخدام ميزات InVision، فإنك توافق على الالتزام بالمسؤوليات التالية.
+
+                أولاً وقبل كل شيء، فإن المستخدمين مسؤولون عن تقديم أوصاف نصية واضحة ودقيقة ومفصلة عند إنشاء الصور. تعتمد جودة الصور التي يتم إنشاؤها على InVision بشكل كامل على دقة ووضوح الأوصاف المقدمة. إذا كانت الأوصاف غامضة أو غير واضحة، فقد لا تتوافق الصور الناتجة مع توقعات المستخدم أو الهدف المقصود. لذلك، من الضروري أن يأخذ المستخدمون الوقت الكافي لتقديم أوصاف دقيقة ومفصلة لضمان إنشاء محتوى بصري عالي الجودة وفعّال.
+                
+                بالإضافة إلى ذلك، يجب أن يفهم المستخدمون أن InVision هي منصة يجب استخدامها فقط لإنشاء محتوى أخلاقي وقانوني ومحترم. يُمنع من استخدام المنصة لإنشاء محتوى ضار أو غير قانوني أو مسيء. يشمل ذلك، على سبيل المثال لا الحصر، المحتوى الذي يعزز العنف أو التمييز أو خطاب الكراهية أو الأنشطة غير القانونية. من الضروري تجنب إنشاء صور يمكن اعتبارها تشهيرًا أو فاحشة أو مسيئة للأفراد أو المجموعات. أي محتوى يعزز الصور النمطية الضارة أو يشجع على الكراهية أو التصرفات غير القانونية محظور تمامًا.
+                
+                علاوة على ذلك، يجب أن يتوافق جميع المحتوى المولد على InVision مع القوانين واللوائح المعمول بها. يجب على المستخدمين التأكد من أن المحتوى الذي ينشئونه لا ينتهك أي قوانين محلية أو وطنية أو دولية، بما في ذلك تلك المتعلقة بحقوق الملكية الفكرية والخصوصية وغيرها من الأمور القانونية. وهذا يعني أنه يجب على المستخدمين عدم إنشاء صور تنتهك حقوق الآخرين مثل استخدام المواد المحمية بحقوق الطبع والنشر أو العلامات التجارية دون إذن."
+                data-de="Bei InVision streben wir eine Plattform an, auf der Benutzer ihre Kreativität entfalten und hochwertige Bilder basierend auf Textbeschreibungen erstellen können. Als Benutzer der Plattform sind Sie jedoch dafür verantwortlich, sie auf ethische und legale Weise zu nutzen. Durch den Zugang und die Nutzung der Funktionen von InVision erklären Sie sich bereit, die folgenden Verantwortlichkeiten zu übernehmen.
+
+                Zunächst einmal sind Benutzer dafür verantwortlich, klare, genaue und präzise Textbeschreibungen bereitzustellen, wenn sie Bilder erstellen. Die Qualität der auf InVision erstellten Bilder hängt vollständig von der Genauigkeit und Klarheit der bereitgestellten Eingabebeschreibungen ab. Wenn die Beschreibungen vage, unklar oder ungenau sind, entsprechen die resultierenden Bilder möglicherweise nicht den Erwartungen des Benutzers oder dem beabsichtigten Zweck. Es ist daher von entscheidender Bedeutung, dass Benutzer sich die Zeit nehmen, genaue und detaillierte Beschreibungen zu liefern, um eine qualitativ hochwertige und effektive visuelle Darstellung zu gewährleisten.
+                
+                Darüber hinaus müssen Benutzer verstehen, dass InVision eine Plattform ist, die nur für die Erstellung von ethischem, legalem und respektvollem Inhalt verwendet werden sollte. Es ist untersagt, die Plattform zu nutzen, um schädlichen, illegalen oder anstößigen Inhalt zu erstellen. Dies umfasst unter anderem Inhalte, die Gewalt, Diskriminierung, Hassreden oder illegale Aktivitäten fördern. Es ist entscheidend, Inhalte zu vermeiden, die als verleumderisch, obszön oder anstößig gegenüber Einzelpersonen oder Gruppen angesehen werden könnten. Jeder Inhalt, der schädliche Stereotype verstärkt, Hass fördert oder illegales Verhalten anregt, ist strikt verboten.
+                
+                Darüber hinaus muss jeder auf InVision generierte Inhalt den geltenden Gesetzen und Vorschriften entsprechen. Benutzer müssen sicherstellen, dass der von ihnen erstellte Inhalt keine lokalen, nationalen oder internationalen Gesetze verletzt, einschließlich solcher im Bereich des geistigen Eigentums, der Datenschutzgesetze und anderer rechtlicher Bestimmungen. Das bedeutet, dass Bilder nicht erstellt werden dürfen, die gegen die Rechte anderer verstoßen, beispielsweise durch die Verwendung urheberrechtlich geschützter Materialien oder Marken ohne Erlaubnis."
+                data-es="En InVision, nos esforzamos por proporcionar una plataforma en la que los usuarios puedan desatar su creatividad y generar imágenes de alta calidad basadas en descripciones textuales. Sin embargo, como usuario de la plataforma, es su responsabilidad utilizarla de manera ética y legal. Al acceder y utilizar las funciones de InVision, usted acepta cumplir con las siguientes responsabilidades.
+
+                En primer lugar, los usuarios son responsables de proporcionar descripciones textuales claras, precisas y detalladas al generar imágenes. La calidad de las imágenes creadas en InVision depende completamente de la precisión y claridad de las descripciones proporcionadas. Si las descripciones son vagas, ambiguas o imprecisas, las imágenes resultantes pueden no cumplir con las expectativas del usuario o con el propósito deseado. Por lo tanto, es esencial que los usuarios se tomen el tiempo necesario para proporcionar descripciones precisas y detalladas para garantizar la creación de contenido visual de alta calidad y efectivo.
+                
+                Además, los usuarios deben comprender que InVision es una plataforma que solo debe utilizarse para crear contenido ético, legal y respetuoso. Está prohibido utilizar la plataforma para crear contenido dañino, ilegal u ofensivo. Esto incluye, pero no se limita a, contenido que promueva violencia, discriminación, discurso de odio o actividades ilegales. Es crucial evitar crear imágenes que puedan considerarse difamatorias, obscenas o ofensivas para individuos o grupos. Cualquier contenido que perpetúe estereotipos dañinos, promueva el odio o fomente conductas ilegales está estrictamente prohibido.
+                
+                Además, todo contenido generado en InVision debe cumplir con las leyes y regulaciones aplicables. Los usuarios deben asegurarse de que el contenido que generan no viole ninguna ley local, nacional o internacional, incluidas las relacionadas con la propiedad intelectual, la privacidad y otros asuntos legales. Esto significa que no se deben crear imágenes que infrinjan los derechos de otros, como el uso de material con derechos de autor o marcas comerciales sin permiso."
+                data-hi="InVision पर, हम एक ऐसी प्लेटफ़ॉर्म प्रदान करने का प्रयास करते हैं, जहाँ उपयोगकर्ता अपने विचारों को व्यक्त कर सकते हैं और टेक्स्ट विवरणों के आधार पर उच्च गुणवत्ता वाली छवियाँ उत्पन्न कर सकते हैं। हालाँकि, प्लेटफ़ॉर्म के उपयोगकर्ता के रूप में, यह आपकी जिम्मेदारी है कि आप इसे नैतिक और कानूनी तरीके से उपयोग करें। InVision की सुविधाओं का उपयोग करने के लिए आप निम्नलिखित जिम्मेदारियों का पालन करने के लिए सहमत होते हैं।
+
+                सर्वप्रथम, उपयोगकर्ता छवियाँ उत्पन्न करते समय स्पष्ट, सटीक और विस्तृत टेक्स्ट विवरण प्रदान करने के लिए जिम्मेदार होते हैं। InVision पर उत्पन्न की गई छवियाँ पूरी तरह से प्रदान किए गए विवरणों की सटीकता और स्पष्टता पर निर्भर करती हैं। अगर विवरण अस्पष्ट, अस्पष्ट या गलत हैं, तो उत्पन्न होने वाली छवियाँ उपयोगकर्ता की अपेक्षाओं या इच्छित उद्देश्य के अनुरूप नहीं हो सकती हैं। इसलिए, यह आवश्यक है कि उपयोगकर्ता समय लें और सटीक और विस्तृत विवरण प्रदान करें ताकि उच्च गुणवत्ता और प्रभावी दृश्य सामग्री बनाई जा सके।
+                
+                इसके अतिरिक्त, उपयोगकर्ताओं को यह समझना चाहिए कि InVision केवल नैतिक, कानूनी और सम्मानजनक सामग्री बनाने के लिए प्लेटफ़ॉर्म है। आपको प्लेटफ़ॉर्म का उपयोग हानिकारक, अवैध या आपत्तिजनक सामग्री बनाने के लिए करने से मना किया गया है। इसमें, लेकिन सीमित नहीं है, हिंसा, भेदभाव, नफरत भरे भाषण या अवैध गतिविधियों को बढ़ावा देने वाली सामग्री शामिल है।"
+                data-zh="在 InVision，我们努力提供一个平台，让用户根据文本描述释放创造力并生成高质量的图像。然而，作为该平台的用户，您有责任以道德和合法的方式使用它。通过访问和使用 InVision 的功能，您同意遵守以下责任。
+
+                首先，用户负责在生成图像时提供清晰、准确和详细的文本描述。在 InVision 上创建的图像质量完全取决于提供的输入描述的准确性和清晰度。如果描述模糊、不清晰或不准确，生成的图像可能无法满足用户的期望或预期目的。因此，用户必须花时间提供准确详细的描述，以确保生成高质量和有效的视觉内容。
+                
+                此外，用户必须理解，InVision 是一个应仅用于创建道德、合法和尊重的内容的平台。禁止使用该平台生成有害、非法或冒犯性的内容。这包括但不限于促进暴力、歧视、仇恨言论或非法活动的内容。必须避免创建可能被认为是诽谤、淫秽或冒犯个人或团体的图像。任何传播有害刻板印象、促进仇恨或鼓励非法行为的内容都是严格禁止的。
+                
+                此外，所有在 InVision 上生成的内容必须遵守适用的法律和规定。用户必须确保他们创建的内容不违反任何地方性、国家性或国际性的法律，包括与知识产权、隐私权和其他法律事务相关的法律。这意味着用户不应创建侵犯他人权利的图像，例如未经许可使用受版权保护的材料或商标。">
+                At InVision, we strive to provide a platform where users can unleash their creativity and generate
+                high-quality images based on text descriptions. However, as a user of the platform, it is your
+                responsibility to use it in a manner that is both ethical and legal. By accessing and utilizing the
+                features of InVision, you agree to adhere to the following responsibilities.
+
+                First and foremost, users are responsible for providing clear, accurate, and precise text descriptions
+                when generating images. The quality of the images created on InVision depends entirely on the accuracy
+                and clarity of the input descriptions provided. If the descriptions are vague, ambiguous, or unclear,
+                the resulting images may not meet the user’s expectations or the intended purpose. It is therefore
+                essential that users take the time to provide accurate and detailed descriptions to ensure the creation
+                of high-quality and effective visual content.
+
+                Additionally, users must understand that InVision is a platform that should only be used for creating
+                content that is ethical, lawful, and respectful. You are prohibited from using the platform to generate
+                harmful, illegal, or offensive content. This includes, but is not limited to, content that promotes
+                violence, discrimination, hate speech, or illegal activities. It is crucial to avoid creating images
+                that could be considered defamatory, obscene, or offensive to individuals or groups. Any content that
+                perpetuates harmful stereotypes, promotes hate, or encourages illegal behavior is strictly prohibited.
+
+                Furthermore, all content generated on InVision must comply with applicable laws and regulations. Users
+                must ensure that the content they create does not violate any local, national, or international laws,
+                including those related to intellectual property, privacy, and other legal matters. This means that you
+                should not create images that infringe on the rights of others, such as using copyrighted material or
+                trademarks without permission. InVision does not take responsibility for any legal issues that arise
+                from the misuse of the platform or the creation of illegal content.
+
+                In addition to legal responsibilities, users must also consider the potential impact their generated
+                content may have on others. InVision is committed to creating a safe and respectful environment, and we
+                expect all users to contribute positively to this. Any content that could harm others, whether
+                emotionally, psychologically, or physically, should be avoided. This includes content that promotes
+                violence, abuse, harassment, or any other form of harm. We ask that users exercise caution and
+                responsibility when using the platform to create content that may affect others negatively.
+
+                Users must also refrain from generating content that may spread misinformation, perpetuate hate, or
+                incite violence or discrimination. The platform is a tool for creativity and innovation, and it should
+                be used to generate positive and inspiring content that contributes to the well-being of society.
+                Content that spreads false information or encourages harmful actions goes against the values of
+                InVision.
+
+                InVision reserves the right to monitor the content that is generated on the platform and to take action
+                if any violations of these responsibilities are identified. If a user is found to be in violation of
+                these terms, InVision may suspend or terminate their account without prior notice. Depending on the
+                severity of the violation, legal action may also be taken, and the user could be held liable for any
+                damages or losses caused by the creation or distribution of harmful or illegal content.
+
+                To maintain the integrity of the platform, it is essential that users understand their role in ensuring
+                a positive and safe experience for all. The responsibility for creating content that adheres to the
+                legal and ethical standards lies with the user. By using InVision, you agree to respect the rights of
+                others and to refrain from using the platform for any malicious, harmful, or illegal purposes.
+
+                We encourage all users to engage with InVision in a manner that promotes creativity, innovation, and
+                respect for others. The platform is here to help you create beautiful and meaningful content, and it
+                should be used in a way that fosters a safe and inclusive environment for everyone.
+
+                In conclusion, users of InVision are responsible for providing accurate and detailed descriptions,
+                ensuring that the content they generate complies with all applicable laws, and refraining from creating
+                harmful or offensive content. By adhering to these responsibilities, users can contribute to a positive
+                and respectful community while enjoying the full potential of the InVision platform.
+            </p>
+        </div>
+
+        <div class="terms-item">
+            <h3 id="contentownershipTitle" data-en="Content Ownership" data-ar="ملكية المحتوى" data-de="Inhaltsrechte"
+                data-es="Propiedad del contenido" data-zh="内容所有权" data-hi="सामग्री स्वामित्व">Content Ownership</h3>
+            <p id="contentownershipContent"
+                data-en="You retain ownership of any content you provide to InVision. However, by using the platform, you grant InVision a license to use, display, and distribute the generated images for promotional and operational purposes. As a user, you acknowledge that any content you upload or generate may be used by InVision for the purpose of marketing, improving services, or for internal operational use. This license is non-exclusive, meaning that it does not limit your right to use or share the content elsewhere. You may continue to use the content as you see fit, but you also grant InVision the right to use, modify, and distribute the content as needed for its intended purposes. The license granted to InVision is worldwide, and it covers all types of media, including but not limited to digital, print, video, and other formats. You understand that by using this platform, you give InVision permission to showcase your generated images in promotional materials, advertisements, and on social media platforms. However, InVision will not claim ownership of the content you generate. The ownership remains with you, and you can continue to use, share, or modify the content outside of the platform as long as it does not violate any applicable laws or infringe upon the rights of others. InVision will not use your content in any way that could harm you or cause reputational damage. By using the platform, you agree to these terms of content ownership and grant InVision the necessary rights to operate within the boundaries established here."
+                data-ar="أنت تحتفظ بملكية أي محتوى تقدمه لـ InVision. ومع ذلك، عند استخدامك للمنصة، فإنك تمنح InVision ترخيصًا لاستخدام وعرض وتوزيع الصور المولدة لأغراض ترويجية وتشغيلية. بصفتك مستخدمًا، فإنك تقر بأن أي محتوى تقوم بتحميله أو إنشائه قد يُستخدم من قبل InVision لأغراض التسويق وتحسين الخدمات أو للاستخدام التشغيلي الداخلي. هذا الترخيص غير حصري، مما يعني أنه لا يحد من حقك في استخدام المحتوى أو مشاركته في أماكن أخرى. يمكنك الاستمرار في استخدام المحتوى كما تراه مناسبًا، ولكنك تمنح أيضًا InVision الحق في استخدام وتعديل وتوزيع المحتوى حسب الحاجة للأغراض المحددة. الترخيص الممنوح لـ InVision هو ترخيص عالمي ويشمل جميع أنواع الوسائط، بما في ذلك على سبيل المثال لا الحصر الوسائط الرقمية والمطبوعة والفيديو وغيرها من الصيغ. أنت تفهم أنه من خلال استخدامك لهذه المنصة، تمنح InVision إذنًا لعرض الصور المولدة في المواد الترويجية والإعلانات وعلى منصات الوسائط الاجتماعية. ومع ذلك، فإن InVision لن تدعي ملكية المحتوى الذي تقوم بإنشائه. تظل الملكية معك، ويمكنك الاستمرار في استخدام المحتوى أو مشاركته أو تعديله خارج المنصة طالما أنه لا ينتهك أي قوانين سارية أو ينتهك حقوق الآخرين. لن تستخدم InVision المحتوى الخاص بك بأي طريقة قد تضر بك أو تتسبب في ضرر لسمعتك. باستخدامك للمنصة، فإنك توافق على هذه الشروط المتعلقة بملكية المحتوى وتمنح InVision الحقوق اللازمة للعمل ضمن الحدود التي تم تحديدها هنا."
+                data-de="Sie behalten die Eigentümerschaft an jedem Inhalt, den Sie InVision zur Verfügung stellen. Durch die Nutzung der Plattform gewähren Sie InVision jedoch eine Lizenz zur Nutzung, Anzeige und Verteilung der generierten Bilder für Werbe- und Betriebszwecke. Als Benutzer erkennen Sie an, dass jeder Inhalt, den Sie hochladen oder erstellen, von InVision zu Marketingzwecken, zur Verbesserung der Dienste oder für interne betriebliche Zwecke verwendet werden kann. Diese Lizenz ist nicht exklusiv, was bedeutet, dass sie Ihr Recht, den Inhalt anderweitig zu nutzen oder zu teilen, nicht einschränkt. Sie können den Inhalt weiterhin nach Belieben verwenden, gewähren InVision jedoch das Recht, den Inhalt nach Bedarf zu nutzen, zu ändern und zu verteilen. Die an InVision gewährte Lizenz ist weltweit und umfasst alle Arten von Medien, einschließlich, aber nicht beschränkt auf digitale, gedruckte, Video- und andere Formate. Sie verstehen, dass Sie durch die Nutzung dieser Plattform InVision die Erlaubnis erteilen, Ihre generierten Bilder in Werbematerialien, Anzeigen und auf sozialen Medien zu präsentieren. InVision beansprucht jedoch nicht die Eigentümerschaft des von Ihnen generierten Inhalts. Die Eigentümerschaft bleibt bei Ihnen, und Sie können den Inhalt weiterhin außerhalb der Plattform verwenden, teilen oder ändern, solange dies keine geltenden Gesetze verletzt oder die Rechte Dritter verletzt. InVision wird Ihren Inhalt nicht auf eine Weise verwenden, die Ihnen schadet oder Ihren Ruf gefährdet. Durch die Nutzung der Plattform stimmen Sie diesen Bedingungen zur Inhaltseigentümerschaft zu und gewähren InVision die notwendigen Rechte, um innerhalb der hier festgelegten Grenzen zu agieren."
+                data-es="Usted retiene la propiedad de cualquier contenido que proporcione a InVision. Sin embargo, al usar la plataforma, otorga a InVision una licencia para usar, mostrar y distribuir las imágenes generadas con fines promocionales y operativos. Como usuario, reconoce que cualquier contenido que cargue o genere puede ser utilizado por InVision con el fin de hacer marketing, mejorar servicios o para uso operativo interno. Esta licencia no es exclusiva, lo que significa que no limita su derecho a utilizar o compartir el contenido en otros lugares. Puede continuar utilizando el contenido como lo desee, pero también otorga a InVision el derecho de usar, modificar y distribuir el contenido según sea necesario para sus fines previstos. La licencia concedida a InVision es mundial y cubre todos los tipos de medios, incluidos pero no limitados a los formatos digitales, impresos, de video y otros. Usted entiende que al usar esta plataforma, le da permiso a InVision para mostrar sus imágenes generadas en materiales promocionales, anuncios y plataformas de redes sociales. Sin embargo, InVision no reclamará la propiedad del contenido que genere. La propiedad permanece con usted, y puede continuar utilizando, compartiendo o modificando el contenido fuera de la plataforma siempre que no infrinja ninguna ley aplicable o los derechos de terceros. InVision no utilizará su contenido de ninguna manera que lo dañe o cause daños a su reputación. Al usar la plataforma, usted acepta estos términos de propiedad del contenido y otorga a InVision los derechos necesarios para operar dentro de los límites establecidos aquí."
+                data-zh="您保留您提供给 InVision 的任何内容的所有权。然而，通过使用该平台，您授予 InVision 一项许可，允许其出于促销和运营目的使用、展示和分发生成的图像。作为用户，您承认任何您上传或生成的内容可能会被 InVision 用于营销、改进服务或内部运营用途。此许可是非排他性的，这意味着它不会限制您在其他地方使用或分享内容的权利。您可以继续根据需要使用内容，但您还授予 InVision 权利，根据需要使用、修改和分发内容。授予 InVision 的许可是全球性的，涵盖所有类型的媒体，包括但不限于数字、印刷、视频和其他格式。您理解，通过使用此平台，您允许 InVision 在促销材料、广告和社交媒体平台上展示您的生成图像。然而，InVision 不会主张您生成的内容的所有权。所有权仍然属于您，您可以继续在平台外使用、共享或修改内容，只要不违反任何适用的法律或侵犯他人权益。InVision 不会以任何可能对您造成伤害或损害您声誉的方式使用您的内容。通过使用该平台，您同意这些内容所有权条款并授予 InVision 必要的权利，以在此处规定的范围内操作。"
+                data-hi="आप किसी भी सामग्री के मालिक होते हैं जो आप InVision को प्रदान करते हैं। हालाँकि, प्लेटफ़ॉर्म का उपयोग करके, आप InVision को प्रमोशनल और ऑपरेशनल उद्देश्यों के लिए उत्पन्न चित्रों का उपयोग, प्रदर्शन और वितरित करने के लिए एक लाइसेंस प्रदान करते हैं। एक उपयोगकर्ता के रूप में, आप स्वीकार करते हैं कि जो भी सामग्री आप अपलोड या उत्पन्न करते हैं, उसे InVision द्वारा विपणन, सेवाओं में सुधार करने या आंतरिक संचालन उद्देश्यों के लिए उपयोग किया जा सकता है। यह लाइसेंस गैर-विशेष है, जिसका अर्थ है कि यह आपके अधिकार को अन्यत्र सामग्री का उपयोग या साझा करने से प्रतिबंधित नहीं करता है। आप सामग्री का उपयोग जैसा उचित समझें, वैसे करना जारी रख सकते हैं, लेकिन आप InVision को यह अधिकार भी प्रदान करते हैं कि वह सामग्री का उपयोग, संशोधन और वितरण आवश्यकतानुसार अपने उद्देश्यों के लिए करे। InVision को प्रदान किया गया लाइसेंस वैश्विक है, और यह सभी प्रकार के मीडिया को कवर करता है, जिसमें डिजिटल, मुद्रित, वीडियो और अन्य प्रारूप शामिल हैं, लेकिन इन तक सीमित नहीं है। आप समझते हैं कि इस प्लेटफ़ॉर्म का उपयोग करके, आप InVision को अपनी उत्पन्न छवियों को प्रचारात्मक सामग्री, विज्ञापनों और सोशल मीडिया प्लेटफ़ॉर्म पर प्रदर्शित करने की अनुमति देते हैं। हालाँकि, InVision आपके द्वारा उत्पन्न की गई सामग्री के मालिक होने का दावा नहीं करेगा। स्वामित्व आपके पास रहेगा, और आप सामग्री का उपयोग, साझा करने या संशोधन करने के लिए प्लेटफ़ॉर्म के बाहर भी जारी रख सकते हैं, जब तक कि यह किसी लागू कानून का उल्लंघन नहीं करता है या दूसरों के अधिकारों का उल्लंघन नहीं करता है। InVision आपकी सामग्री का किसी भी तरीके से उपयोग नहीं करेगा जो आपको हानि पहुंचा सकता है या आपकी प्रतिष्ठा को नुकसान पहुँचा सकता है। इस प्लेटफ़ॉर्म का उपयोग करके, आप सामग्री स्वामित्व की इन शर्तों से सहमत होते हैं और InVision को यहाँ निर्धारित सीमाओं के भीतर कार्य करने के लिए आवश्यक अधिकार प्रदान करते हैं।">
+                You retain ownership of any content you provide to InVision. However, by using the platform, you grant
+                InVision a license to use, display, and distribute the generated images for promotional and operational
+                purposes. As a user, you acknowledge that any content you upload or generate may be used by InVision for
+                the purpose of marketing, improving services, or for internal operational use. This license is
+                non-exclusive, meaning that it does not limit your right to use or share the content elsewhere. You may
+                continue to use the content as you see fit, but you also grant InVision the right to use, modify, and
+                distribute the content as needed for its intended purposes. The license granted to InVision is
+                worldwide, and it covers all types of media, including but not limited to digital, print, video, and
+                other formats. You understand that by using this platform, you give InVision permission to showcase your
+                generated images in promotional materials, advertisements, and on social media platforms. However,
+                InVision will not claim ownership of the content you generate. The ownership remains with you, and you
+                can continue to use, share, or modify the content outside of the platform as long as it does not violate
+                any applicable laws or infringe upon the rights of others. InVision will not use your content in any way
+                that could harm you or cause reputational damage. By using the platform, you agree to these terms of
+                content ownership and grant InVision the necessary rights to operate within the boundaries established
+                here.
+            </p>
+        </div>
+
+        <div class="terms-item">
+            <h3 id="limitationofLiabilityTitle" data-en="Limitation of Liability" data-ar="حدود المسؤولية"
+                data-de="Haftungsbeschränkung" data-es="Limitación de responsabilidad" data-zh="责任限制"
+                data-hi="दायित्व की सीमा">Limitation of
+                Liability</h3>
+            <p id="limitationofLiabilityContent"
+                data-en="InVision will not be liable for any damages resulting from the use or inability to use the platform, including but not limited to data loss, business interruption, or personal injury. InVision does not guarantee the availability of the platform at all times or that the platform will be free from errors or interruptions. By using the platform, you accept that there may be times when the platform is inaccessible or experiences technical difficulties that could affect your ability to use the service. InVision will not be responsible for any indirect, incidental, consequential, special, or punitive damages arising out of or related to the use of the platform, even if InVision has been advised of the possibility of such damages. This includes, but is not limited to, loss of profits, loss of business opportunities, loss of goodwill, data corruption, or loss of data. InVision is not liable for any damages to your devices, computer systems, or networks that may occur as a result of using the platform, including viruses, malware, or other harmful components. You acknowledge that the use of the platform is at your own risk, and you are solely responsible for any consequences that result from your use of the service. The platform is provided 'as is' without any warranties or representations of any kind. InVision does not make any representations regarding the accuracy, reliability, or completeness of the content generated through the platform. InVision does not guarantee that the platform will meet your specific needs or that the content generated will be error-free. You agree to indemnify and hold harmless InVision, its affiliates, officers, and employees from any claims, damages, or losses that may arise from your use of the platform or from any breach of these terms. InVision’s liability is limited to the maximum extent permitted by law, and in no event shall InVision’s total liability exceed the amount you have paid to InVision for the use of the platform. This limitation of liability applies to all claims, whether in contract, tort, or otherwise, and whether the damages are direct, indirect, incidental, or consequential. You agree that the limitations of liability set forth in these terms are reasonable and enforceable, and that they reflect the allocation of risks between you and InVision. If you do not agree with these limitations, you should cease using the platform immediately."
+                data-ar="لن تكون InVision مسؤولة عن أي أضرار ناتجة عن استخدام المنصة أو عدم القدرة على استخدامها، بما في ذلك على سبيل المثال لا الحصر فقدان البيانات، انقطاع الأعمال، أو الإصابات الشخصية. لا تضمن InVision توافر المنصة في جميع الأوقات أو أن المنصة ستكون خالية من الأخطاء أو الانقطاعات. من خلال استخدام المنصة، فإنك تقبل أنه قد تكون هناك أوقات تكون فيها المنصة غير متاحة أو تعاني من صعوبات فنية قد تؤثر على قدرتك على استخدام الخدمة. لن تكون InVision مسؤولة عن أي أضرار غير مباشرة أو عرضية أو تبعية أو خاصة أو عقابية تنشأ عن أو تتعلق باستخدام المنصة، حتى إذا تم إخطار InVision بإمكانية حدوث مثل هذه الأضرار. يشمل ذلك، ولكن لا يقتصر على، فقدان الأرباح، فقدان الفرص التجارية، فقدان السمعة، تلف البيانات، أو فقدان البيانات. لا تتحمل InVision المسؤولية عن أي أضرار قد تحدث لأجهزتك أو أنظمة الكمبيوتر أو الشبكات نتيجة لاستخدام المنصة، بما في ذلك الفيروسات أو البرمجيات الضارة أو المكونات الضارة الأخرى. تقر بأن استخدامك للمنصة هو على مسؤوليتك الخاصة، وأنك وحدك مسؤول عن أي عواقب ناتجة عن استخدامك للخدمة. يتم تقديم المنصة
+                كما هي دون أي ضمانات أو تمثيلات من أي نوع. لا تقدم InVision أي تمثيلات بشأن دقة أو موثوقية أو اكتمال
+                المحتوى الذي تم إنشاؤه من خلال المنصة. لا تضمن InVision أن المنصة ستلبي احتياجاتك المحددة أو أن المحتوى
+                الذي تم إنشاؤه سيكون خاليًا من الأخطاء. توافق على تعويض InVision وحمايتها من أي مطالبات أو أضرار أو
+                خسائر قد تنشأ عن استخدامك للمنصة أو عن أي خرق لهذه الشروط. يتم تحديد مسؤولية InVision إلى أقصى حد يسمح
+                به القانون، وفي أي حال من الأحوال، لا تتجاوز المسؤولية الإجمالية لـ InVision المبلغ الذي دفعته لـ
+                InVision لاستخدام المنصة. ينطبق هذا التحديد للمسؤولية على جميع المطالبات، سواء كانت في العقد أو في
+                المسؤولية التقصيرية أو غيرها، سواء كانت الأضرار مباشرة أو غير مباشرة أو عرضية أو تبعية. توافق على أن
+                الحدود المفروضة للمسؤولية المنصوص عليها في هذه الشروط معقولة وقابلة للتنفيذ، وأنها تعكس توزيع المخاطر
+                بينك وبين InVision. إذا كنت لا توافق على هذه الحدود، يجب عليك التوقف عن استخدام المنصة فورًا."
+                data-de="InVision haftet nicht für Schäden, die aus der Nutzung oder Unfähigkeit zur Nutzung der Plattform entstehen, einschließlich, aber nicht beschränkt auf Datenverlust, Geschäftsunterbrechung oder Personenschäden. InVision garantiert nicht die Verfügbarkeit der Plattform zu jeder Zeit oder dass die Plattform frei von Fehlern oder Unterbrechungen ist. Durch die Nutzung der Plattform akzeptieren Sie, dass es Zeiten geben kann, in denen die Plattform nicht zugänglich ist oder technische Schwierigkeiten auftreten, die Ihre Fähigkeit zur Nutzung des Dienstes beeinträchtigen könnten. InVision ist nicht verantwortlich für indirekte, zufällige, Folgeschäden, besondere oder strafende Schäden, die sich aus der Nutzung der Plattform oder damit verbundenen Aktivitäten ergeben, auch wenn InVision auf die Möglichkeit solcher Schäden hingewiesen wurde. Dies umfasst unter anderem den Verlust von Gewinnen, Geschäftsgelegenheiten, Rufschäden, Datenverlust oder Datenkorruption. InVision haftet nicht für Schäden an Ihren Geräten, Computersystemen oder Netzwerken, die durch die Nutzung der Plattform entstehen, einschließlich Viren, Malware oder anderer schädlicher Komponenten. Sie erkennen an, dass die Nutzung der Plattform auf eigenes Risiko erfolgt, und Sie sind allein verantwortlich für alle Folgen, die sich aus Ihrer Nutzung des Dienstes ergeben. Die Plattform wird „wie besehen“ ohne jegliche Garantien oder Zusicherungen bereitgestellt. InVision gibt keine Zusicherungen hinsichtlich der Genauigkeit, Zuverlässigkeit oder Vollständigkeit der auf der Plattform generierten Inhalte. InVision garantiert nicht, dass die Plattform Ihre spezifischen Anforderungen erfüllt oder dass die generierten Inhalte fehlerfrei sind. Sie erklären sich damit einverstanden, InVision, seine Partner, Führungskräfte und Mitarbeiter von sämtlichen Ansprüchen, Schäden oder Verlusten freizustellen, die aus Ihrer Nutzung der Plattform oder aus einem Verstoß gegen diese Bedingungen entstehen könnten. Die Haftung von InVision ist auf das gesetzlich zulässige Höchstmaß begrenzt, und in keinem Fall darf die gesamte Haftung von InVision den Betrag übersteigen, den Sie für die Nutzung der Plattform an InVision gezahlt haben. Diese Haftungsbeschränkung gilt für alle Ansprüche, sei es vertraglich, deliktisch oder anderweitig, und unabhängig davon, ob die Schäden direkt, indirekt, zufällig oder Folgeschäden sind. Sie stimmen zu, dass die in diesen Bedingungen festgelegten Haftungsbeschränkungen vernünftig und durchsetzbar sind und dass sie die Risikoverteilung zwischen Ihnen und InVision widerspiegeln. Wenn Sie diesen Beschränkungen nicht zustimmen, sollten Sie die Nutzung der Plattform sofort einstellen."
+                data-es="InVision no será responsable de los daños que resulten del uso o la imposibilidad de usar la plataforma, incluyendo pero no limitado a la pérdida de datos, interrupción de negocios o lesiones personales. InVision no garantiza la disponibilidad de la plataforma en todo momento ni que la plataforma estará libre de errores o interrupciones. Al usar la plataforma, acepta que puede haber momentos en los que la plataforma no esté accesible o experimente dificultades técnicas que puedan afectar su capacidad para utilizar el servicio. InVision no será responsable de daños indirectos, incidentales, consecuentes, especiales o punitivos que surjan de o estén relacionados con el uso de la plataforma, incluso si InVision ha sido advertido de la posibilidad de tales daños. Esto incluye, pero no se limita a, pérdida de ganancias, pérdida de oportunidades comerciales, pérdida de buena voluntad, corrupción de datos o pérdida de datos. InVision no es responsable de los daños a sus dispositivos, sistemas informáticos o redes que puedan ocurrir como resultado del uso de la plataforma, incluidos virus, malware u otros componentes dañinos. Usted reconoce que el uso de la plataforma es bajo su propio riesgo, y es el único responsable de las consecuencias que resulten del uso del servicio. La plataforma se proporciona
+                tal como está sin garantías ni representaciones de ningún tipo. InVision no hace ninguna representación
+                sobre la precisión, confiabilidad o integridad del contenido generado a través de la plataforma.
+                InVision no garantiza que la plataforma satisfaga sus necesidades específicas o que el contenido
+                generado esté libre de errores. Usted acepta indemnizar y mantener indemne a InVision, sus afiliados,
+                directores y empleados de cualquier reclamo, daño o pérdida que pueda surgir del uso de la plataforma o
+                de cualquier incumplimiento de estos términos. La responsabilidad de InVision se limita en la máxima
+                medida permitida por la ley, y en ningún caso la responsabilidad total de InVision superará la cantidad
+                que ha pagado a InVision por el uso de la plataforma. Esta limitación de responsabilidad se aplica a
+                todas las reclamaciones, ya sea en contrato, agravio o de otro modo, y ya sea que los daños sean
+                directos, indirectos, incidentales o consecuentes. Usted acepta que las limitaciones de responsabilidad
+                establecidas en estos términos son razonables y ejecutables, y que reflejan la asignación de riesgos
+                entre usted y InVision. Si no está de acuerdo con estas limitaciones, debe dejar de usar la plataforma
+                inmediatamente."
+                data-zh="InVision 对因使用或无法使用平台而导致的任何损害不承担责任，包括但不限于数据丢失、业务中断或人身伤害。InVision 不保证平台在任何时候都可用，也不保证平台会没有错误或中断。通过使用该平台，您接受可能会有某些时候平台无法访问或出现技术问题，这可能会影响您使用服务的能力。InVision 不对因使用平台而产生的任何间接、附带、后果性、特殊或惩罚性损害负责，即使 InVision 已被告知可能发生此类损害。这包括但不限于利润损失、商业机会损失、信誉损失、数据损坏或数据丢失。InVision 不对因使用平台而对您的设备、计算机系统或网络造成的任何损害负责，包括病毒、恶意软件或其他有害组件。您承认使用该平台是自担风险的，您对因此而产生的任何后果承担全部责任。该平台按“现状”提供，没有任何形式的保证或陈述。InVision 不对通过该平台生成的内容的准确性、可靠性或完整性做出任何陈述。InVision 不保证该平台能满足您的特定需求，也不保证生成的内容没有错误。您同意赔偿并使 InVision、其附属公司、管理人员和员工免受任何因您使用该平台或违反这些条款而产生的索赔、损害或损失。InVision 的责任限制为法律允许的最大范围，在任何情况下，InVision 的总责任不得超过您为使用平台支付的金额。此责任限制适用于所有索赔，无论是在合同、侵权还是其他方面，无论损害是直接的、间接的、附带的还是后果性的。您同意，这些条款中规定的责任限制是合理和可执行的，并且反映了您与 InVision 之间的风险分配。如果您不同意这些限制，您应立即停止使用该平台。"
+                data-hi="InVision किसी भी नुकसान के लिए जिम्मेदार नहीं होगा जो प्लेटफ़ॉर्म का उपयोग करने या इसका उपयोग करने में असमर्थता से उत्पन्न होता है, जिसमें डेटा हानि, व्यापार में व्यवधान या व्यक्तिगत चोट शामिल हैं, लेकिन इन्हीं तक सीमित नहीं है। InVision प्लेटफ़ॉर्म की उपलब्धता की गारंटी नहीं देता है कि प्लेटफ़ॉर्म हमेशा उपलब्ध रहेगा या उसमें कोई त्रुटियां या व्यवधान नहीं होंगे। प्लेटफ़ॉर्म का उपयोग करते समय, आप स्वीकार करते हैं कि कभी-कभी प्लेटफ़ॉर्म अनुपलब्ध हो सकता है या तकनीकी कठिनाइयों का सामना कर सकता है, जो आपकी सेवा का उपयोग करने की क्षमता को प्रभावित कर सकते हैं। InVision किसी भी अप्रत्यक्ष, आकस्मिक, परिणामी, विशेष या दंडात्मक नुकसान के लिए जिम्मेदार नहीं होगा जो प्लेटफ़ॉर्म के उपयोग से उत्पन्न होते हैं, यहां तक कि यदि InVision को ऐसे नुकसान की संभावना के बारे में सूचित किया गया हो। इसमें लाभ की हानि, व्यापार अवसरों की हानि, प्रतिष्ठा की हानि, डेटा भ्रष्टाचार या डेटा हानि शामिल हैं। InVision आपके उपकरणों, कंप्यूटर सिस्टम या नेटवर्क को होने वाले किसी भी नुकसान के लिए जिम्मेदार नहीं होगा जो प्लेटफ़ॉर्म के उपयोग के परिणामस्वरूप हो सकता है, जिसमें वायरस, मैलवेयर या अन्य हानिकारक घटक शामिल हैं। आप स्वीकार करते हैं कि प्लेटफ़ॉर्म का उपयोग आपके अपने जोखिम पर किया जा रहा है, और आप सेवा का उपयोग करने के परिणामस्वरूप उत्पन्न होने वाले किसी भी परिणाम के लिए पूरी तरह से जिम्मेदार हैं। प्लेटफ़ॉर्म 'जैसा है' प्रदान किया गया है, बिना किसी प्रकार की गारंटी या प्रस्तुति के। InVision द्वारा प्लेटफ़ॉर्म के माध्यम से उत्पन्न सामग्री की सटीकता, विश्वसनीयता या पूर्णता के बारे में कोई प्रस्तुति नहीं की जाती है। InVision यह गारंटी नहीं देता है कि प्लेटफ़ॉर्म आपकी विशिष्ट आवश्यकताओं को पूरा करेगा या उत्पन्न सामग्री त्रुटिरहित होगी। आप सहमत हैं कि आप InVision, इसके सहयोगियों, अधिकारियों और कर्मचारियों को प्लेटफ़ॉर्म के उपयोग या इन शर्तों के उल्लंघन से उत्पन्न किसी भी दावे, हानि या नुकसान से मुक्त रखेंगे। InVision की जिम्मेदारी कानून द्वारा अनुमत अधिकतम सीमा तक सीमित है, और किसी भी स्थिति में InVision की कुल जिम्मेदारी उस राशि से अधिक नहीं होगी जो आपने प्लेटफ़ॉर्म के उपयोग के लिए InVision को भुगतान की है। यह जिम्मेदारी सीमा सभी दावों पर लागू होती है, चाहे वह अनुबंध, दुराचार या अन्यथा हो, और चाहे नुकसान सीधे, अप्रत्यक्ष, आकस्मिक या परिणामी हो। आप सहमत हैं कि इन शर्तों में निर्धारित जिम्मेदारी की सीमाएं उचित और लागू करने योग्य हैं, और ये आपके और InVision के बीच जोखिम के वितरण को दर्शाती हैं। यदि आप इन सीमाओं से सहमत नहीं हैं, तो आपको तुरंत प्लेटफ़ॉर्म का उपयोग बंद करना चाहिए।">
+                InVision will not be liable for any damages resulting from the use or inability to use the platform,
+                including but not limited to data loss, business interruption, or personal injury. InVision does not
+                guarantee the availability of the platform at all times or that the platform will be free from errors or
+                interruptions. By using the platform, you accept that there may be times when the platform is
+                inaccessible or experiences technical difficulties that could affect your ability to use the service.
+                InVision will not be responsible for any indirect, incidental, consequential, special, or punitive
+                damages arising out of or related to the use of the platform, even if InVision has been advised of the
+                possibility of such damages. This includes, but is not limited to, loss of profits, loss of business
+                opportunities, loss of goodwill, data corruption, or loss of data. InVision is not liable for any
+                damages to your devices, computer systems, or networks that may occur as a result of using the platform,
+                including viruses, malware, or other harmful components. You acknowledge that the use of the platform is
+                at your own risk, and you are solely responsible for any consequences that result from your use of the
+                service. The platform is provided 'as is' without any warranties or representations of any kind.
+                InVision does not make any representations regarding the accuracy, reliability, or completeness of the
+                content generated through the platform. InVision does not guarantee that the platform will meet your
+                specific needs or that the content generated will be error-free. You agree to indemnify and hold
+                harmless InVision, its affiliates, officers, and employees from any claims, damages, or losses that may
+                arise from your use of the platform or from any breach of these terms. InVision’s liability is limited
+                to the maximum extent permitted by law, and in no event shall InVision’s total liability exceed the
+                amount you have paid to InVision for the use of the platform. This limitation of liability applies to
+                all claims, whether in contract, tort, or otherwise, and whether the damages are direct, indirect,
+                incidental, or consequential. You agree that the limitations of liability set forth in these terms are
+                reasonable and enforceable, and that they reflect the allocation of risks between you and InVision. If
+                you do not agree with these limitations, you should cease using the platform immediately.
+            </p>
+        </div>
+
+        <!-- Add More Terms and Conditions Here -->
+        <!-- You can add more sections as per your requirements -->
+
+        <!-- <a href="image.html" class="return-home" data-en="Return to Home" data-ar="الرجوع إلى الصفحة الرئيسية">Return to
+            Home</a> -->
+    </section>
+    <script>
+        // قائمة بجميع معرفات العناوين والفقرات
+        const sections = [
+            { titleId: 'introductionTitle', contentId: 'introductionContent' },
+            { titleId: 'userresponsibilitiesTitle', contentId: 'userresponsibilitiesContent' },
+            { titleId: 'contentownershipTitle', contentId: 'contentownershipContent' },
+            { titleId: 'limitationofLiabilityTitle', contentId: 'limitationofLiabilityContent' }
+        ];
+
+        // إعداد اللغة الحالية
+        let currentLanguage = 'en'; // افتراضيًا اللغة الإنجليزية
+
+        // تفعيل التبديل لكل عنوان وفقًا للمعرفات
+        sections.forEach(({ titleId, contentId }) => {
+            const title = document.getElementById(titleId);
+            const content = document.getElementById(contentId);
+
+            // تأكد أن العناصر موجودة لتجنب الأخطاء
+            if (title && content) {
+                // إعدادات أولية للفقرة لتطبيق التأثيرات
+                content.style.transition = 'opacity 0.5s, max-height 0.5s';
+                content.style.overflow = 'hidden';
+                content.style.maxHeight = '1000px'; // تعيين ارتفاع مبدئي كبير كافٍ
+                content.style.opacity = '1'; // النص مرئي افتراضيًا
+
+                // إضافة حدث عند الضغط على العنوان
+                title.addEventListener('click', () => {
+                    if (content.style.opacity === '1') {
+                        // إذا كان النص مرئيًا، قم بإخفائه
+                        content.style.opacity = '0'; // تقليل الشفافية
+                        content.style.maxHeight = '0'; // تقليل الارتفاع
+                    } else {
+                        // إذا كان النص مخفيًا، قم بإظهاره
+                        content.style.opacity = '1'; // استعادة الشفافية
+                        content.style.maxHeight = '1000px'; // إعادة الارتفاع الكافي
+                    }
+                });
+            }
+        });
+
+        // تغيير اللغة
+        function changeLanguage(language) {
+            currentLanguage = language;
+
+            // تحديث اتجاه النصوص بناءً على اللغة
+            const direction = language === 'ar' ? 'rtl' : 'ltr';
+            const textAlign = language === 'ar' ? 'right' : 'left';
+
+            // تحديث الاتجاه لكل الفقرات والعناوين
+            sections.forEach(({ titleId, contentId }) => {
+                const title = document.getElementById(titleId);
+                const content = document.getElementById(contentId);
+
+                if (title && content) {
+                    title.style.direction = direction;
+                    title.style.textAlign = textAlign;
+                    content.style.direction = direction;
+                    content.style.textAlign = textAlign;
+
+                    // تحديث النص بناءً على اللغة
+                    title.textContent = title.getAttribute(`data-${language}`);
+                    content.textContent = content.getAttribute(`data-${language}`);
+                }
+            });
+        }
+
+        // مثال: تغيير اللغة إلى العربية
+        document.getElementById('languageSwitcher').addEventListener('change', (event) => {
+            changeLanguage(event.target.value);
+        });
+
+    </script>
+    <footer>
+        <p data-ar="InVision © 2025. جميع الحقوق محفوظة" data-en="InVision © 2025. All rights reserved."
+            data-es="InVision © 2025. Todos los derechos reservados." data-zh="InVision © 2025. 版权所有"
+            data-hi="InVision © 2025. सर्व अधिकार सुरक्षित" data-de="InVision © 2025. Alle Rechte vorbehalten">InVision
+            ©
+            2025. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const languages = [
+            { code: 'ar', name_ar: 'عربية', name_en: 'Arabic', name_es: 'Árabe', name_zh: '阿拉伯语', name_hi: 'अरबी', name_de: 'Arabisch', flag: 'united-arab-emirates.png' },
+            { code: 'en', name_ar: 'إنجليزي', name_en: 'English', name_es: 'Inglés', name_zh: '英语', name_hi: 'अंग्रेज़ी', name_de: 'Englisch', flag: 'united-kingdom.png' },
+            { code: 'es', name_ar: 'إسبانية', name_en: 'Spanish', name_es: 'Español', name_zh: '西班牙语', name_hi: 'स्पैनिश', name_de: 'Spanisch', flag: 'spain.png' },
+            { code: 'zh', name_ar: 'صينية', name_en: 'Chinese', name_es: 'Chino', name_zh: '中文', name_hi: 'चीनी', name_de: 'Chinesisch', flag: 'china.png' },
+            { code: 'hi', name_ar: 'هندية', name_en: 'Hindi', name_es: 'Hindú', name_zh: '印地语', name_hi: 'हिंदी', name_de: 'Hindi', flag: 'india.png' },
+            { code: 'de', name_ar: 'ألمانية', name_en: 'German', name_es: 'Alemán', name_zh: '德语', name_hi: 'जर्मन', name_de: 'Deutsch', flag: 'german-flag.png' }
+        ];
+
+        const htmlElement = document.documentElement;
+        const languageIcon = document.getElementById('languageIcon');
+        const languageDropdown = document.getElementById('languageDropdown');
+        const currentFlag = document.getElementById('currentFlag');
+        function changeLanguage(lang) {
+            const selectedLanguage = languages.find(l => l.code === lang);
+            if (!selectedLanguage) return;
+
+            // تخزين اللغة في localStorage
+            localStorage.setItem('selectedLanguage', lang);
+
+            // تحديث لغة الصفحة
+            htmlElement.lang = lang;
+
+            // تحديث العلم
+            currentFlag.src = selectedLanguage.flag;
+            currentFlag.alt = selectedLanguage[`name_${lang}`];
+
+            // تحديث النصوص
+            document.querySelectorAll('[data-ar]').forEach(element => {
+                const newText = element.getAttribute(`data-${lang}`);
+                if (newText) {
+                    element.innerHTML = newText;
+
+                    // تغيير اتجاه النص ومحاذاته
+                    if (!element.closest('footer')) {
+                        element.style.direction = lang === 'ar' ? 'rtl' : 'ltr';
+                        element.style.textAlign = lang === 'ar' ? 'right' : 'left';
+                    } else {
+                        // الحفاظ على تمركز النصوص في الفوتر
+                        element.style.textAlign = 'center';
+                    }
+                }
+            });
+
+            // تعبئة القائمة
+            populateLanguageOptions(lang);
+
+            // إغلاق القائمة
+            languageDropdown.classList.remove('show');
+        }
+        // تعبئة القائمة
+        function populateLanguageOptions(currentLang) {
+            languageDropdown.innerHTML = '';
+
+            languages.forEach(lang => {
+                if (lang.code !== currentLang) {
+                    const listItem = document.createElement('li');
+                    listItem.textContent = lang[`name_${currentLang}`]; // عرض الاسم بلغة المستخدم الحالية
+                    listItem.setAttribute('data-lang', lang.code);
+                    listItem.style.fontWeight = 'bold';
+                    const flag = document.createElement('img');
+                    flag.src = lang.flag;
+                    flag.alt = lang[`name_${currentLang}`];
+
+                    listItem.prepend(flag);
+                    listItem.addEventListener('click', () => changeLanguage(lang.code));
+                    languageDropdown.appendChild(listItem);
+                }
+            });
+        }
+
+        // عرض القائمة المنسدلة
+        languageIcon.addEventListener('click', () => {
+            languageDropdown.classList.toggle('show');
+        });
+
+        // إغلاق القائمة عند النقر خارجها
+        document.addEventListener('click', (event) => {
+            if (!languageIcon.contains(event.target)) {
+                languageDropdown.classList.remove('show');
+            }
+        });
+
+        // تهيئة الصفحة
+        document.addEventListener('DOMContentLoaded', () => {
+            changeLanguage('en'); // اللغة الافتراضية
+        });
+    </script>
+</body>
+
+</html>
